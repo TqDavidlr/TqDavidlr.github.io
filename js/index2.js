@@ -1,11 +1,11 @@
-function saveStorage(id2) {  
-    var data = document.getElementById(id2).value; //取值  
+function saveStorage(id) {  
+    var data = document.getElementById(id).value; //取值  
     var time = new Date().getTime();  
     localStorage.setItem(time, data); //保存  
     alert("数据已经保存！");  
-    localStorage('msg2');  
+    localStorage('msg');  
 }  
-function loadStorage(id2) {  
+function loadStorage(id) {  
     var result = '<table border = "1">';  
     for (var i = 0; i < localStorage.length; i++)  
     {  
@@ -17,11 +17,11 @@ function loadStorage(id2) {
         result += '<tr><td>' + '这是第'+ i + '条数据 </td><td>' + value + '</td><td>' + datestr + '</td></tr>';  
     }  
     result += '</table>';  
-    var target = document.getElementById(id2);  
+    var target = document.getElementById(id);  
     target.innerHTML = result;   
 }  
-function clearStorage(id2) {  
+function clearStorage(id) {  
     localStorage.clear();  
     alert("数据已经被成功删除了！");  
-    loadStorage('msg2');  
+    loadStorage('msg');  
 }  

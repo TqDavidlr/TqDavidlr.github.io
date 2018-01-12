@@ -16,18 +16,18 @@
 <script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript" src="js/garden.js"></script>
 <script type="text/javascript" src="js/functions.js"></script>
-<!-- <script type="text/javascript" src="js/index2.js"></srcipt> -->
-	
+<script type="text/javascript" src="js/index2.js"></script>
+
 <!--</head>
 <body>
 	<h1>   邓亭强</h1>
 	<p>    东南大学信息学院硕士研究生</p>
 	<p>    update:2018.1.31,特别版</p>
 </body>-->
-	
+
 <body>
 
-	
+
 <div id="mainDiv">
 	<div id="content">
 		<div id="code">
@@ -87,7 +87,7 @@ together.setMilliseconds(0);
 if (!document.createElement('canvas').getContext) {
 	var msg = document.createElement("div");
 	msg.id = "errorMsg";
-	msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
+	msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+";
 	document.body.appendChild(msg);
 	$("#code").css("display", "none")
 	$("#copyright").css("position", "absolute");
@@ -106,11 +106,17 @@ if (!document.createElement('canvas').getContext) {
 	adjustCodePosition();
 	$("#code").typewriter();
 }
-	
-	
-	
+
+
+
 </script>
-	
+
+<textarea id2="demo" cols="50" rows="10"></textarea><br/><br/>
+<input type="button" value="保存" onclick="saveStorage('demo');" />
+<input type="button" value="清空" onclick="clearStorage('msg2');" />
+<input type="button" value="读取" onclick="loadStorage('msg2');" />
+<hr color="red">
+<p id2="msg2"></p>
 	<!--<form action="save_book.php" method= 'post'>
 	<p>用户<input type= "text" name="username"></p>
 	<p>留言<textarea name="content"></textarea></p>
@@ -121,17 +127,17 @@ if (!document.createElement('canvas').getContext) {
 <p>Copyright@TingqiangDeng 2018, 来源：<a href="http://tqDavidlr.github.io" target="_blank">Tingqiangdeng</a></p>
 </div>
 </body>
-	
+
 <!-- <script type="text/javascript" src="js/index2.js"></srcipt> -->
 
-<!-- 	
-	<body>  
-        
-        <textarea id="demo" cols="50" rows="10"></textarea><br/><br/>  
-        <input type="button" value="保存" onclick="saveStorage('demo');" />   
-        <input type="button" value="清空" onclick="clearStorage('msg');" />   
-        <input type="button" value="读取" onclick="loadStorage('msg');" />  
-        <hr color="red">  
-        <p id="msg"></p>   
+<!--
+	<body>
+
+        <textarea id="demo" cols="50" rows="10"></textarea><br/><br/>
+        <input type="button" value="保存" onclick="saveStorage('demo');" />
+        <input type="button" value="清空" onclick="clearStorage('msg');" />
+        <input type="button" value="读取" onclick="loadStorage('msg');" />
+        <hr color="red">
+        <p id="msg"></p>
     </body>   -->
 </html>

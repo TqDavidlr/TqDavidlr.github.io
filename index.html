@@ -105,14 +105,14 @@ if (!document.createElement('canvas').getContext) {
 	$("#code").typewriter();
 }
 </script>
-	<p></p>
+	<form>
 	<textarea id="demo" cols="50" rows="10"></textarea><br/><br/>  
         <input type="button" value="保存" onclick="saveStorage('demo');" />   
         <input type="button" value="清空" onclick="clearStorage('msg');" />   
         <input type="button" value="读取" onclick="loadStorage('msg');" />  
         <hr color="red">  
         <p id="msg"></p>  
-
+  </form>
 	<!--<form action="save_book.php" method= 'post'>
 	<p>用户<input type= "text" name="username"></p>
 	<p>留言<textarea name="content"></textarea></p>

@@ -16,7 +16,7 @@
 <script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript" src="js/garden.js"></script>
 <script type="text/javascript" src="js/functions.js"></script>
-<!-- <script type="text/javascript" src="js/index2.js"></srcipt> -->
+<script type="text/javascript" src="js/index2.js"></srcipt>
 	
 <!--</head>
 <body>
@@ -106,7 +106,15 @@ if (!document.createElement('canvas').getContext) {
 	adjustCodePosition();
 	$("#code").typewriter();
 }
+	
+	
 </script>
+	<textarea id2="demo" cols="50" rows="10"></textarea><br/><br/>  
+        <input type="button" value="保存" onclick="saveStorage('demo');" />   
+        <input type="button" value="清空" onclick="clearStorage('msg2');" />   
+        <input type="button" value="读取" onclick="loadStorage('msg2');" />  
+        <hr color="red">  
+        <p id="msg2"></p>   
 	<!--<form action="save_book.php" method= 'post'>
 	<p>用户<input type= "text" name="username"></p>
 	<p>留言<textarea name="content"></textarea></p>
@@ -118,9 +126,9 @@ if (!document.createElement('canvas').getContext) {
 </div>
 </body>
 	
-<script type="text/javascript" src="js/index2.js"></srcipt>
+<!-- <script type="text/javascript" src="js/index2.js"></srcipt> -->
 
-	
+<!-- 	
 	<body>  
         
         <textarea id="demo" cols="50" rows="10"></textarea><br/><br/>  
@@ -129,5 +137,5 @@ if (!document.createElement('canvas').getContext) {
         <input type="button" value="读取" onclick="loadStorage('msg');" />  
         <hr color="red">  
         <p id="msg"></p>   
-    </body>  
+    </body>   -->
 </html>
